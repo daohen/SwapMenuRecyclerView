@@ -86,6 +86,10 @@ public class SwapRecyclerView extends RecyclerView {
                 if (mTouchPosition != -1) {
                     //通过position得到item的viewHolder,并判断合法性
                     View view = getChildAt(mTouchPosition - mFirstPosition);
+
+                    if (view == null)
+                        return true;
+
                     RecyclerView.ViewHolder viewHolder = getChildViewHolder(view);
                     if (viewHolder.itemView instanceof SwipeMenuLayout) {
                         //menuView处于打开且点击的不在menu区域
