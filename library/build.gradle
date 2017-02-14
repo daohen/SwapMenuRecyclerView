@@ -26,12 +26,12 @@ dependencies {
 }
 
 publish {
-    userOrg = 'ta893115871'//bintray.com用户名
-    groupId = 'com.gxz'//jcenter上的路径
+    userOrg = 'daohen'//bintray.com用户名
+    groupId = 'com.daohen.gxz'//jcenter上的路径
     artifactId = 'swapmenurecyclerview'//项目名称
     publishVersion = '1.0'//版本号
     desc = 'swapmenurecyclerview'//描述
-    website = 'https://github.com/ta893115871/SwapMenuRecyclerView'////网站，一般是github上的地址
+    website = 'https://github.com/daohen/SwapMenuRecyclerView'////网站，一般是github上的地址
     licences = ['Apache-2.0']
 }
 
