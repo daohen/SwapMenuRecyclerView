@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -25,17 +24,3 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
 }
 
-publish {
-    userOrg = 'daohen'//bintray.com用户名
-    groupId = 'com.daohen.gxz'//jcenter上的路径
-    artifactId = 'swapmenurecyclerview'//项目名称
-    publishVersion = '1.0'//版本号
-    desc = 'swapmenurecyclerview'//描述
-    website = 'https://github.com/daohen/SwapMenuRecyclerView'////网站，一般是github上的地址
-    licences = ['Apache-2.0']
-}
-
-//  ./gradlew clean build bintrayUpload
-// -PbintrayUser=ta893115871
-// -PbintrayKey=xxxxxxxxxxxxxxxxxxxxxx
-// -PdryRun=false
